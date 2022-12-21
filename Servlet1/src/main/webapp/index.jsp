@@ -14,6 +14,8 @@
 <body>
 <h1>Hello, world!</h1>
 <a href="hello-servlet">Hello Servlet</a>
+<br>
+<a href="Servlet1">PaginaNome</a>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

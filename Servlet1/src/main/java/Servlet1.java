@@ -9,8 +9,9 @@ public class Servlet1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nome = "Matteo";
+        String path = "nome.jsp";
         request.setAttribute("VariabileNome", nome);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/nome.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher(path);
         dispatcher.forward(request, response);
     }
 
