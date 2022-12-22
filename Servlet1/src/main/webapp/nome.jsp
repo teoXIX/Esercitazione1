@@ -13,5 +13,7 @@
 <body>
     nome da visualizzare: ${VariabileNome}
     <%= session.getAttribute("nome") %>
+    <br>
+    cognome da visualizzare: <%= session.getAttribute("cognome") %>
 </body>
 </html>

@@ -15,6 +15,7 @@ public class nomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.setAttribute("nome", request.getParameter("nome"));
+        session.setAttribute("cognome", request.getParameter("cognome"));
         RequestDispatcher ris = request.getRequestDispatcher("/nome.jsp");
         ris.forward(request, response);
     }
