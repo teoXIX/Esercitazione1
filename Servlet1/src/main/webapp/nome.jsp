@@ -15,5 +15,9 @@
     <%= session.getAttribute("nome") %>
     <br>
     cognome da visualizzare: <%= session.getAttribute("cognome") %>
+    <br>
+    email da visualizzare: <%= session.getAttribute("email") %>
+    <br>
+    password da visualizzare: <%= session.getAttribute("password") %>
 </body>
 </html>

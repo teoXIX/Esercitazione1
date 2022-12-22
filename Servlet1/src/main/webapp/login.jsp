@@ -17,6 +17,10 @@
     <input type = "text" name = "nome"/>
     <label>Cognome</label>
     <input type = "text" name = "cognome"/>
+    <label>Email</label>
+    <input type = "email" name = "email"/>
+    <label>Password</label>
+    <input type = "password" name = "password"/>
     <br>
     <input type = "submit" id = "Invia" value = "Login"/>
   </form>

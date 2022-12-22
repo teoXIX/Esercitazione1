@@ -13,9 +13,18 @@ public class nomeServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String nome = request.getParameter("nome");
+        String cognome = request.getParameter("cognome");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        Studente s = new Studente(nome, cognome, email, password);
+
         HttpSession session = request.getSession();
-        session.setAttribute("nome", request.getParameter("nome"));
-        session.setAttribute("cognome", request.getParameter("cognome"));
+        session.setAttribute("nome", nome);
+        session.setAttribute("cognome", cognome);
+        session.setAttribute("email", email);
+        session.setAttribute("password", password);
+
         RequestDispatcher ris = request.getRequestDispatcher("/nome.jsp");
         ris.forward(request, response);
     }
