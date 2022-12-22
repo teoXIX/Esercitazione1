@@ -13,6 +13,12 @@
 </head>
 <body>
 <jsp:include page="navbar.jsp"></jsp:include>
+<form id = "login" method = "POST" action = "nomeServlet" >
+    <h1>INSERISCI IL TUO NOME</h1>
+    <label>Nome</label>
+    <input type = "text" name = "nome"/>
+    <br>
+</form>
 <h1>Hello, world!</h1>
 <a href="hello-servlet">Hello Servlet</a>
 <br>
